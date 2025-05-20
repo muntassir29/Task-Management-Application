@@ -267,21 +267,20 @@ const CreateTask = () => {
               />
             </div>
 
-            <div className='clo-span-6 md:col-span-4'>
-              <label className='text-xs font-medium text-slate-600'>
-                Due Date
-              </label>
+            <div className="col-span-6 md:col-span-4">
+                 <label className="text-xs font-medium text-slate-600">
+                    Due Date
+                 </label>
 
-              <input 
-              placeholder='Create App UI'
-              className='form-input w-full text-sm text-back outline-none bg-white border border-slate-100 px-2.5 py-3 rounded-md mt-2 placeholder:text-gray-500'
-              value={taskData.dueDate || ""}
-              onChange={({ target }) => 
-              handleValueChange("dueDate", target.value)
-              }
-              type='date'
-              />
+             <input 
+                 type="date"
+                 value={taskData.dueDate || ""}
+                 onChange={({ target }) => handleValueChange("dueDate", target.value)}
+                 className="form-input w-full text-sm text-black outline-none bg-white border border-slate-200 px-3 py-2 rounded-md mt-2 placeholder:text-gray-500"
+                 placeholder="Select due date"
+             />
             </div>
+
 
             <div className='col-span-12 md:col-span-3'>
               <label className='text-xs font-medium text-slate-600'>
